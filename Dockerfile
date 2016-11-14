@@ -8,4 +8,4 @@ RUN yum -y update && yum install -y \
     which
 
 RUN curl -L -O ${FILE_BEAT_URL} && \
-    rpm -vi filebeat-${FILE_BEAT_VER}.rpm
+    rpm -vi filebeat-${FILE_BEAT_VER}-`uname -m`.rpm
